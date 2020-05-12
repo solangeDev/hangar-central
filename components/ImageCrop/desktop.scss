@@ -1,0 +1,102 @@
+.imageCrop {
+  > div:last-child {
+    border: none !important;
+    border-radius: 50%;
+  }
+}
+.cropImage {
+  &__fabeOut {
+    padding: 0 desktop(112px);
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000008f;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    display: grid;
+    grid-template-columns: desktop(435px) 1fr;
+    z-index: 10;
+  }
+  &__closeModal {
+    display: none;
+  }
+  &__cropContainer {
+    width: 100%;
+    max-width: 600px;
+    max-height: 613px;
+    min-width: 315px;
+    min-height: 613px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-column: 2;
+    &__imageContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__buttonContainer {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      align-content: baseline;
+    }
+    &__widthButton {
+      width: desktop(410px);
+      max-width: 410px;
+    }
+    &__imgHeight {
+      img{
+        height: 413px;
+      }
+    }
+    &__imgWidth {
+      img{
+        width: 100%;
+        max-width: 416px;
+      }
+    }
+  }
+}
+.imageStyle {
+  width: 70%;
+}
+.imageViewer {
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background-image: url('/assets/images/profile-default.png');
+  &__btnImageViewer {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    border-radius: 50%;
+  }
+  &__btnImageViewerAdd {
+    background-image: url('/assets/images/add.png');
+  }
+  &__btnImageViewerEdit {
+    background-image: url('/assets/images/edit.png');
+  }
+  img {
+    border-radius: 50%;
+    width: 100%;
+    border: 3px solid $brown-grey;
+  }
+}
+.hidden {
+  display: none;
+}

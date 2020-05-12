@@ -1,0 +1,47 @@
+.Footer {
+  width: desktop(255px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+
+  &__container {
+  }
+
+  &__reserved {
+    padding: desktop(10px) 0;
+    @include text($brown-grey, 'Raleway-Regular', desktop(12px), 1.5, normal);
+  }
+
+  &__link {
+    @include text(#6d7278, 'Raleway-Regular', desktop(12px), 1.5, normal);
+    text-decoration: none;
+  }
+
+  &__redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: desktop(10px);
+    > a {
+      text-decoration: none;
+      &:nth-child(2n) {
+        padding: 0 desktop(10px);
+      }
+    }
+  }
+
+  &__icon {
+    &:before {
+      font-size: desktop(25px);
+    }
+    color: $bluish;
+    text-decoration: none;
+  }
+
+  &__padding {
+    padding-left: desktop(4px);
+  }
+}

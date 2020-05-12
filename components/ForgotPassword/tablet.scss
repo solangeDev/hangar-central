@@ -1,0 +1,29 @@
+.forgotPassword {
+  width: tablet(540px);
+  &__title {
+    @include text($black-text, 'Raleway-Bold', tablet(23px), 1.86, normal);
+    color: $bluish;
+    padding-bottom: tablet(10px);
+  }
+  &__subTitle {
+    @include text($black-text, 'Raleway-Regular', tablet(16px), 1.86, normal);
+    color: $greyish-brown;
+    display: inline-block;
+    margin-bottom: tablet(30px);
+  }
+  &__inputWidth {
+    width: 100%;
+    margin-bottom: tablet(30px);
+  }
+  &__buttonContainer {
+    margin-bottom: tablet(15px);
+  }
+  &__forgotPass {
+    @include text($black-text, 'Raleway-Medium', tablet(14px), 1.86, normal);
+    color: $greyish-brown;
+    button {
+      @include text($black-text, 'Raleway-Medium', tablet(14px), 1.86, normal);
+      color: $bluish;
+    }
+  }
+}

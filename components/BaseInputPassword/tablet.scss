@@ -1,0 +1,56 @@
+.BaseInputPassword {
+  width: 100%;
+
+  &__root{
+    margin-top: 16px !important;
+  }
+
+  p {
+    @include text($pastel-red, 'Raleway-Regular', tablet(12px), 1.5, normal);
+    color: $pastel-red !important;
+    font-size: tablet(12px) !important;
+  }
+
+  > div {
+    > input {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        tablet(16px),
+        normal,
+        normal
+      );
+      padding: 5px 0 !important;
+      font-size: tablet(16px) !important;
+    }
+  }
+
+  > div:hover:before {
+    border-bottom: 1px solid $dark-sky-blue !important;
+  }
+
+  > div:hover:after {
+    border-bottom: 1px solid $dark-sky-blue !important;
+  }
+
+  > div:after,
+  > div:before {
+    border-bottom: 1px solid $grey !important;
+  }
+
+  label {
+    @include text($brown-grey, 'Raleway', tablet(16px), normal, normal);
+    color: $brown-grey !important;
+    font-size: tablet(16px) !important;
+  }
+
+  svg {
+    color: $brown-grey;
+    font-size: tablet(22px);
+  }
+
+  &__error {
+    @include text($pastel-red, 'Raleway', tablet(12px), 1.5, normal);
+    color: $pastel-red !important;
+  }
+}

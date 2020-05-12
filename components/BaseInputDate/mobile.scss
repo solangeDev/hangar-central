@@ -1,0 +1,59 @@
+.BaseInput {
+  width: 100%;
+
+  p {
+    @include text($pastel-red, 'Raleway-Regular', mobile(12px), 1.5, normal);
+  }
+
+  &__root {
+    button {
+      padding: 0 !important;
+    }
+    svg {
+      color: $brown-grey;
+      font-size: mobile(20px);
+    }
+
+    width: 100%;
+
+    p {
+      @include text($pastel-red, 'Raleway-Regular', mobile(12px), 1.5, normal);
+      color: $pastel-red !important;
+      font-size: mobile(12px) !important;
+    }
+
+    > div:hover:before {
+      border-bottom: 1px solid $dark-sky-blue !important;
+    }
+
+    > div:hover:after {
+      border-bottom: 1px solid $dark-sky-blue !important;
+    }
+
+    > div {
+      margin-top: 18px !important;
+    }
+
+    > div:after,
+    > div:before {
+      border-bottom: 1px solid $grey !important;
+    }
+
+    input {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        mobile(16px),
+        normal,
+        normal
+      );
+      font-size: mobile(16px) !important;
+      padding: 5px 0 !important;
+    }
+
+    label {
+      @include text($brown-grey, 'Raleway', mobile(16px), normal, normal);
+      color: $brown-grey !important;
+    }
+  }
+}

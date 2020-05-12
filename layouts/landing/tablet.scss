@@ -1,0 +1,210 @@
+.landing {
+  background: linear-gradient(180deg, rgba(242,242,242,1) 90%, rgba(255,255,255,1) 90%);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    min-height: 100vh;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__parallax {
+    background-repeat: no-repeat;
+    background-image: url('../../public/assets/images/parallax_landing.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  // 1th Section
+  &__register {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  &__title {
+    @include text($white, 'Raleway-Medium', tablet(29px), 1.14, normal);
+    width: tablet(445px);
+    margin-bottom: tablet(05px);
+    >span{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subTitle {
+    @include text($white, 'Raleway-Regular', tablet(16px), 1.67, normal);
+    width: tablet(445px);
+  }
+
+  &__buttonRegister {
+    margin-top: tablet(50px);
+    width: tablet(255px);
+    height: tablet(46px);
+  }
+
+  // 2th Section
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: span 2;
+    padding-top: tablet(120px);
+    justify-items: flex-end;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  &__paddingCard {
+    padding-top: tablet(100px);
+  }
+
+  &__marginCard {
+    padding-bottom: tablet(40px);
+  }
+
+  // 3th Section
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  &__infoTitle {
+    @include text($black-text, 'Raleway-Medium', tablet(29px), 1.86, normal);
+    font-weight: 500;
+  }
+
+  &__infoTitle2 {
+    @include text($greyish-brown, 'Raleway-Medium', tablet(29px), 1.86, normal);
+    font-weight: 500;
+  }
+
+  &__itemText {
+    position: relative;
+    padding-left: tablet(25px);
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      tablet(16px),
+      1.67,
+      normal
+    );
+    &::before {
+      font-family: 'icomoon';
+      content: '\e925';
+      position: absolute;
+      left: 0px;
+      color: $bluish;
+    }
+  }
+
+  &__itemList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  // 4th Section
+  &__joinus {
+    p {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        tablet(16px),
+        1.67,
+        normal
+      );
+      margin: 0;
+      padding: 0;
+    }
+    padding-bottom: tablet(60px);
+  }
+
+  &__joinusButtonWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__joinusButton {
+    width: tablet(255px);
+    height: tablet(46px);
+    margin-top: tablet(20px);
+  }
+
+  // 5th Section
+  &__joinusImageDesk {
+    display: none;
+  }
+
+  &__joinusImageMob {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  &__joinusImage {
+    padding-bottom: tablet(60px);
+  }
+
+  &__joinusImageMob {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__cardDesktop {
+    display: block;
+  }
+
+  &__cardMobile {
+    display: none;
+  }
+
+  &__iconUp {
+    &:before {
+      font-size: tablet(30px);
+    }
+
+    color: $white;
+    font-weight: bold;
+  }
+
+  &__up {
+    position: absolute;
+    right: tablet(20px);
+    bottom: tablet(30px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: tablet(40px);
+    height: tablet(39px);
+    background-color: $bluish;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__imgSecc1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    >img{
+      width: tablet(220px);
+      min-width: tablet(220px);
+    }
+  }
+}

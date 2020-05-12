@@ -1,0 +1,77 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  height: tablet(88px);
+  padding: tablet(10px) tablet(50px) tablet(10px) tablet(50px);
+  border-top: 1px solid $grey;
+
+  &__language {
+    padding: tablet(05px);
+    border-radius: 5px;
+    border: solid 1px #d6d6d6;
+    @include text($greyish-brown, 'Raleway', tablet(12px), 1.75, normal);
+    font-weight: 600;
+  }
+
+  &__terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__link {
+    @include text($bluish, 'Raleway-Regular', tablet(12px), 1.5, normal);
+    padding-right: tablet(10px);
+    padding-left: tablet(10px);
+    text-decoration: none;
+  }
+
+  &__redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      margin-left: tablet(10px);
+      text-decoration: none;
+      display: flex;
+      align-self: center;
+    }
+    img {
+      width: tablet(25px);
+    }
+  }
+
+  &__icon {
+    color: $bluish;
+
+    &:before {
+      font-size: tablet(25px);
+    }
+
+    text-decoration: none;
+  }
+
+  &__cardDesktop,
+  &__cardMobile {
+    display: block;
+  }
+}
+.MenuItemRoot{
+  background: $white !important;
+  color: $bluish !important;
+  font-family: 'Raleway-Regular' !important;
+  font-size: tablet(12px) !important;
+  padding-left: 10px !important;
+  padding-right: 26px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  white-space: inherit !important;
+  width: inherit !important;
+  max-width: 175px !important;
+}
+.MenuItemRoot:first-child{
+  padding-top: 15px !important;
+}

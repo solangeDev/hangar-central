@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="247px" height="211px" viewBox="0 0 247 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>7316DFB0-713D-400E-B6F2-457CF6910B7D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-20.1%" y="-16.9%" width="140.3%" height="133.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.362403759   0 0 0 0 0.362403759   0 0 0 0 0.362403759  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <ellipse id="path-2" cx="45.1376147" cy="45.254717" rx="45.1376147" ry="45.254717"></ellipse>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D--Landing" transform="translate(-172.000000, -1012.000000)">
+            <g id="d-image-search" transform="translate(186.000000, 1024.000000)">
+                <g id="image-2">
+                    <g id="Group-5" filter="url(#filter-1)">
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="153.868263" height="182.307978" rx="10"></rect>
+                        <line x1="23.1856287" y1="141.209647" x2="127.520958" y2="141.209647" id="Stroke" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="53.748503" y1="37.9369202" x2="109.60479" y2="37.9369202" id="Stroke-Copy-3" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="53.748503" y1="27.3988868" x2="127.520958" y2="27.3988868" id="Stroke-Copy-2" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="23.1856287" y1="158.070501" x2="127.520958" y2="158.070501" id="Stroke" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polygon id="Stroke" fill="#BCBCBC" points="23.1856287 121.187384 127.520958 121.187384 127.520958 56.9053803 23.1856287 56.9053803"></polygon>
+                        <polygon id="Stroke-Copy" fill="#BCBCBC" points="23.1856287 46.3673469 43.2095808 46.3673469 43.2095808 26.3450835 23.1856287 26.3450835"></polygon>
+                    </g>
+                    <g id="Group-10" transform="translate(108.946108, 26.037106)">
+                        <g id="Group-7">
+                            <g id="briefcase" transform="translate(9.000000, 5.000000)">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="Mask" fill="#F2F2F2" fill-rule="nonzero" xlink:href="#path-2"></use>
+                                <g mask="url(#mask-3)" id="Group-4" stroke-linecap="round" stroke-linejoin="round">
+                                    <g transform="translate(21.000000, 21.000000)">
+                                        <g transform="translate(0.500000, 0.568627)">
+                                            <path d="M11.6115631,10.6981132 L11.6115631,3.56782075 C11.6115631,1.59758491 13.3722333,0 15.5435956,0 L27.3298681,0 C29.5012304,0 31.2619006,1.59758491 31.2619006,3.56782075 L31.2619006,10.6981132" id="Stroke" stroke="#555555" stroke-width="3"></path>
+                                            <path d="M0,20.504717 L18.1705534,29.5382339 C20.2440701,30.5690164 22.6293937,30.5690164 24.7029103,29.5382339 L42.8734637,20.504717" id="Stroke" stroke="#555555" stroke-width="3"></path>
+                                            <path d="M38.9758761,41.9009434 L3.89758761,41.9009434 C1.74611925,41.9009434 0,40.1535849 0,38.0005896 L0,14.598467 C0,12.4454717 1.74611925,10.6981132 3.89758761,10.6981132 L38.9758761,10.6981132 C41.1273445,10.6981132 42.8734637,12.4454717 42.8734637,14.598467 L42.8734637,38.0005896 C42.8734637,40.1535849 41.1273445,41.9009434 38.9758761,41.9009434 Z" id="Stroke" stroke="#555555" stroke-width="3"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <path d="M99.816454,52.2790955 C99.816454,77.3528941 78.9660063,97.6820806 53.2492899,97.6820806 C27.5325734,97.6820806 6.68212569,77.3528941 6.68212569,52.2790955 C6.68212569,27.205297 27.5325734,6.87611048 53.2492899,6.87611048 C78.9660063,6.87611048 99.816454,27.205297 99.816454,52.2790955 Z M126.682126,123.87611 L90.8612302,88.9507373" id="Combined-Shape" stroke="#1E79BE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" transform="translate(66.682126, 65.376110) rotate(7.000000) translate(-66.682126, -65.376110) "></path>
+                            <polyline id="Path-2" stroke="#F2F2F2" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="63.2477064 61.137931 72.8808594 70.4152748 87.7207031 49"></polyline>
+                        </g>
+                    </g>
+                </g>
+                <polyline id="Path-2" stroke="#DF7A09" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="172.193814 87.1750368 181.826967 96.4523805 196.666811 75.0371058"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

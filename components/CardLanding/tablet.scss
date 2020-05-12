@@ -1,0 +1,72 @@
+.card {
+
+  &__card {
+    width: tablet(255px);
+    min-height: tablet(242px);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(38, 38, 38, 0.2);
+    border: solid 1px #d6d6d6;
+    background-color: $white;
+    padding: tablet(15px);
+  }
+
+  &__headerCard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: tablet(15px);
+  }
+
+  &__titleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  &__titleWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: tablet(15px);
+  }
+
+  &__titleCard {
+    @include text($greyish-brown, 'Raleway-SemiBold', tablet(14px), normal, normal);
+    font-weight: 600;
+  }
+
+  &__logoCard {
+    width: 46px;
+    height: 46px;
+    border: solid 1px #ededed;
+    background-color: #c6c3c3;
+    border-radius: 50%;
+    margin-right: tablet(10px);
+  }
+
+  &__titleDesc {
+    @include text(#858585, 'Raleway', tablet(10px), 1.8, normal);
+  }
+
+  &__titleDesc2 {
+    @include text(#858585, 'Raleway', tablet(11px), 1.8, normal);
+  }
+
+  &__parrafoCard {
+    @include text($greyish-brown, 'Raleway-Regular', tablet(13px), 1.54, normal);
+  }
+
+  &__imgCard {
+    width: tablet(215px);
+    height: tablet(157px);
+    background-color: #c6c3c3;
+    margin-top: tablet(20px);
+    margin-bottom: tablet(20px);
+  }
+
+  &__wrapperImgCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}

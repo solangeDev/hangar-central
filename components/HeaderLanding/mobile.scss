@@ -1,0 +1,41 @@
+.headerLanding {
+  width: 100%;
+  background-color: transparent;
+  height: auto;
+  position: absolute;
+  top: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: mobile(20px) mobile(20px) 0 mobile(20px);
+  }
+
+  &__wrapperButton {
+    display: flex;
+  }
+
+  &__logo {
+    width: mobile(150px);
+    height: auto;
+  }
+
+
+  &__buttonSession {
+    height: auto;
+    margin-left: 0;
+  }
+
+  &__buttonRegister {
+    height: auto;
+    display: none;
+    margin-left: 0;
+  }
+
+  &__logo{
+    min-width: mobile(130px);
+    width: mobile(130px);
+  }
+
+}

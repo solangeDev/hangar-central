@@ -1,0 +1,39 @@
+.headerLanding {
+  width: 100%;
+  background-color: transparent;
+  height: auto;
+  position: absolute;
+  top: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: tablet(250px);
+    height: auto;
+  }
+
+  &__wrapperButton {
+    display: flex;
+  }
+
+  &__buttonSession {
+    height: auto;
+    margin-left: 0;
+    padding-left: tablet(20px);
+  }
+
+  &__buttonRegister {
+    height: auto;
+    margin-left: 0;
+  }
+
+  &__logo{
+    min-width: tablet(163px);
+    width: tablet(163px);
+  }
+
+}

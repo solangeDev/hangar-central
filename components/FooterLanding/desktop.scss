@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  height: desktop(88px);
+  padding: desktop(10px) desktop(50px) desktop(10px) desktop(50px);
+  border-top: 1px solid $grey;
+
+  &__icon {
+    &:before {
+      font-size: desktop(25px);
+    }
+
+    color: $bluish;
+    text-decoration: none;
+  }
+
+  &__language {
+    padding: desktop(05px);
+    border-radius: 5px;
+    border: solid 1px #d6d6d6;
+    @include text($greyish-brown, 'Raleway', desktop(12px), 1.75, normal);
+    font-weight: 600;
+  }
+
+  &__terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__link {
+    @include text($bluish, 'Raleway-Regular', desktop(12px), 1.5, normal);
+    padding: 6px 0 7px;
+    padding-right: mobile(10px);
+    padding-left: mobile(10px);
+    text-decoration: none;
+  }
+
+  &__redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      margin-left: desktop(20px);
+      text-decoration: none;
+      display: flex;
+      align-self: center;
+    }
+    img {
+      width: desktop(25px);
+    }
+  }
+
+  &__cardDesktop,
+  &__cardMobile {
+    display: block;
+  }
+}
+
+.MenuItemRoot {
+  background: $white !important;
+  color: $bluish !important;
+  font-family: 'Raleway-Regular' !important;
+  font-size: desktop(12px) !important;
+  padding-left: 10px !important;
+  padding-right: 26px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  white-space: inherit !important;
+  width: desktop(175px) !important;
+  &:hover {
+    color: $brown-grey !important;
+  }
+}
+.MenuItemRoot:first-child {
+  padding-top: 15px !important;
+}
+
+.MenuItemRootGrey {
+  background: $white !important;
+  color: $bluish !important;
+  font-family: 'Raleway-Regular' !important;
+  font-size: desktop(12px) !important;
+  padding-left: 10px !important;
+  padding-right: 26px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  white-space: inherit !important;
+  width: desktop(175px) !important;
+  &:hover {
+    color: $brown-grey !important;
+  }
+}
+.MenuItemRootGrey:first-child {
+  padding-top: 15px !important;
+}

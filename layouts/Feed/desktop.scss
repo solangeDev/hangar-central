@@ -1,0 +1,73 @@
+.Feed {
+  &__container {
+    background-color: #e6eaed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: desktop(50px) 0 0 0;
+  }
+
+  &__wrapperFixed {
+    position: fixed;
+  }
+
+  &__logo {
+    min-width: 186px;
+    width: desktop(186px);
+    cursor: pointer;
+  }
+
+  &__logoWrapperFixed {
+    position: fixed;
+  }
+
+  &__logoWrapper {
+    width: desktop(255px);
+    height: desktop(100px);
+    background-color: #0a2a43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: desktop(25px);
+    border-radius: 3px;
+  }
+
+  &__wrapperCards {
+    width: desktop(255px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__wrapperFeed {
+    width: desktop(540px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 desktop(30px);
+  }
+
+  &__cardProfile {
+    display: block;
+  }
+
+  &__cardProfileHide {
+    display: none;
+    transition: all 5s ease;
+  }
+
+  &__borderMenu {
+    margin-top: desktop(30px);
+  }
+
+  &__wrapperFixedMenu {
+    position: fixed;
+    top: desktop(150px);
+  }
+
+  &__containerPosts {
+    width: desktop(540px);
+    height: 2000px;
+    background-color: #cccccc;
+  }
+}

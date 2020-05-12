@@ -1,0 +1,106 @@
+.step1Form {
+  &__container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 mobile(15px) 0 mobile(15px);
+    width: mobile(320px);
+  }
+
+  &__title {
+    @include text($bluish, 'Raleway-Bold', mobile(23px), 1.86, normal);
+    padding-bottom: mobile(10px);
+  }
+
+  &__description {
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      mobile(16px),
+      normal,
+      normal
+    );
+    padding-bottom: mobile(30px);
+  }
+
+  &__row {
+    padding: 0 0 mobile(20px) 0;
+  }
+
+  &__rowTopRecapchat{
+    padding: 0;
+  }
+
+  &__terms {
+    padding-bottom: mobile(20px);
+
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        mobile(12px),
+        normal,
+        normal
+      );
+      font-weight: normal;
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', mobile(12px), normal, normal);
+      text-decoration: none;
+      margin-left: mobile(05px);
+    }
+  }
+
+  &__singIn {
+    padding-top: mobile(15px);
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        mobile(14px),
+        normal,
+        normal
+      );
+      font-weight: 500;
+      padding-right: mobile(05px);
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', mobile(14px), 1.57, normal);
+      text-decoration: none;
+    }
+  }
+
+  &__wrapperRecapchat {
+    padding: mobile(15px) 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__validatePassword {
+    display: flex;
+    flex-direction: row;
+    @include text($greyish-brown, 'Raleway-Medium', mobile(12px), normal, normal);
+    font-weight: 500;
+    justify-content: space-between;
+  }
+
+  &__stepPasswordValid {
+    @include text(
+      $color-validate-pass,
+      'Raleway-Medium',
+      mobile(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+  }
+}

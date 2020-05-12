@@ -1,0 +1,114 @@
+.CardProfile {
+  &__container {
+    width: desktop(255px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 -2px 5px 0 rgba(38, 38, 38, 0.2);
+    border: solid 1px #c5c5c5;
+    position: relative;
+  }
+
+  &__menu {
+    padding-bottom: desktop(25px);
+    font-size: desktop(28px);
+    position: relative;
+    top: desktop(12px);
+    right: desktop(-90px);
+    cursor: pointer;
+  }
+
+  &__iconProfile {
+    font-size: desktop(100px);
+  }
+
+  &__imageProfile {
+    width: desktop(100px);
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  &__border {
+    width: desktop(250px);
+    height: 1px;
+    border: solid 1px #ebebeb;
+  }
+
+  &__text {
+    @include text($greyish-brown, 'Raleway-Bold', desktop(16px), 1.25, normal);
+    font-weight: bold;
+    padding: desktop(20px) desktop(20px) desktop(3px) desktop(20px);
+    text-align: center;
+  }
+
+  &__description {
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      desktop(14px),
+      1.57,
+      normal
+    );
+  }
+
+  &__wrapperButton {
+    padding: desktop(20px) 0 desktop(22px) 0;
+    min-width: desktop(135px);
+    max-width: desktop(200px);
+  }
+
+  &__addTabCompany {
+    cursor: pointer;
+    @include text($brown-grey, 'Raleway-Bold', desktop(15px), 1.57, normal);
+  }
+
+  &__iconAddCompany {
+    font-size: desktop(28px);
+    cursor: pointer;
+    color: $brown-grey;
+  }
+
+  &__addCompany {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    div:nth-child(2n) {
+      padding-left: desktop(10px);
+    }
+    display: flex;
+    justify-content: center;
+    padding: desktop(17px) 0;
+  }
+
+  &__optionMenu {
+    width: desktop(195px);
+    height: desktop(58px);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(38, 38, 38, 0.2);
+    border: solid 1px #c5c5c5;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__iconMenu {
+    font-size: desktop(28px);
+    padding-right: desktop(10px);
+  }
+
+  &__optionMenuText {
+    @include text($brown-grey, 'Raleway-Bold', desktop(14px), 1.29, normal);
+    font-weight: bold;
+    cursor: pointer;
+    width: desktop(117px);
+  }
+
+  &__root {
+    top: desktop(-20px) !important;
+  }
+}

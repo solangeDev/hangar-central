@@ -1,0 +1,81 @@
+.step2Form {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 0;
+      width: mobile(320px);
+      padding: 0 mobile(15px) 0 mobile(15px);
+    }
+  
+    &__title {
+      @include text($bluish, 'Raleway-Bold', mobile(23px), 1.86, normal);
+      padding-bottom: mobile(10px);
+    }
+  
+    &__description {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        mobile(16px),
+        normal,
+        normal
+      );
+      padding-bottom: mobile(20px);
+    }
+  
+    &__inputPass {
+      width: mobile(84px);
+      padding-right: mobile(10px);
+    }
+  
+    &__wrapInputPass {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: mobile(30px);
+    }
+  
+    &__sendCode {
+      padding-top: mobile(15px);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      span{
+        @include text(
+            $greyish-brown,
+            'Raleway-Regular',
+            mobile(14px),
+            1.57,
+            normal
+          );
+          font-weight: 500;
+      }
+
+      a {
+        @include text($bluish, 'Raleway-Regular', mobile(14px), 1.57, normal);
+        padding-left: mobile(05px);
+        text-decoration: none;
+      }
+    }
+  
+    &__errorMessage {
+      font-size: mobile(12px) !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 0;
+      > span {
+        @include text($pastel-red, 'Raleway-Regular', mobile(13px), 1.5, normal);
+      }
+    }
+  
+    &__wrapperButton {
+      padding-top: mobile(50px);
+    }
+  
+    &__hide {
+      display: none;
+    }
+  }
+  

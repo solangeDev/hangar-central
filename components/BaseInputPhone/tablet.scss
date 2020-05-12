@@ -1,0 +1,58 @@
+.BaseInput {
+  &__phoneCode {
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      tablet(16px),
+      normal,
+      normal
+    );
+    font-size: tablet(16px) !important;
+  }
+
+  &__root {
+    span {
+      :before {
+        color: $brown-grey;
+        font-size: tablet(20px);
+      }
+    }
+    p {
+      @include text($pastel-red, 'Raleway-Regular', tablet(12px), 1.5, normal);
+      color: $pastel-red !important;
+      font-size: tablet(12px) !important;
+    }
+
+    > div:hover:before {
+      border-bottom: 1px solid $bluish !important;
+    }
+
+    > div:hover:after {
+      border-bottom: 1px solid $bluish !important;
+    }
+    > div {
+      margin-top: 16px !important;
+    }
+
+    > div:after,
+    > div:before {
+      border-bottom: 1px solid $grey !important;
+    }
+
+    input {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        tablet(16px),
+        normal,
+        normal
+      );
+      font-size: tablet(16px) !important;
+    }
+
+    label {
+      @include text($brown-grey, 'Raleway', tablet(16px), normal, normal);
+      color: $brown-grey !important;
+    }
+  }
+}

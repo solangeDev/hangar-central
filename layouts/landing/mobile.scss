@@ -1,0 +1,214 @@
+.landing {
+  background: #f2f2f2;
+  &__container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65vh;
+    min-height: 100vh;
+    z-index: 2;
+    position: relative;
+    padding-top: mobile(20px);
+  }
+
+  &__parallax {
+    background-image: url('../../public/assets/images/parallax_landing.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  // 1th Section
+  &__register {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: mobile(150px) mobile(20px) 0 mobile(20px);
+  }
+
+  &__title {
+    @include text($white, 'Raleway-Medium', mobile(26px), 1.14, normal);
+    width: fit-content;
+    margin-bottom: mobile(05px);
+    > span {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subTitle {
+    @include text($white, 'Raleway-Regular', mobile(15px), 1.67, normal);
+    width: fit-content;
+  }
+
+  &__buttonRegister {
+    margin-top: mobile(50px);
+    width: 100%;
+    height: mobile(55px);
+  }
+
+  // 2th Section
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: span 2;
+    padding-top: 0;
+    margin-top: mobile(-56px); //task 94692
+    justify-items: flex-end;
+    align-items: flex-start;
+    padding: mobile(150px) mobile(20px) 0 mobile(20px);
+  }
+
+  &__paddingCard {
+    padding-top: 0;
+  }
+
+  &__marginCard {
+    padding-bottom: mobile(40px);
+
+    &:nth-child(3n) {
+      padding-bottom: 0;
+    }
+  }
+
+  // 3th Section
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 mobile(20px);
+  }
+
+  &__infoTitle {
+    @include text($black-text, 'Raleway-Medium', mobile(26px), 1.86, normal);
+    font-weight: 500;
+    padding-top: mobile(30px);
+  }
+
+  &__infoTitle2 {
+    @include text($greyish-brown, 'Raleway-Medium', mobile(25px), 1.86, normal);
+    font-weight: 500;
+    padding-top: mobile(30px);
+  }
+
+  &__itemText {
+    position: relative;
+    padding-left: mobile(25px);
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      mobile(15px),
+      1.67,
+      normal
+    );
+    &::before {
+      font-family: 'icomoon';
+      content: '\e925';
+      position: absolute;
+      left: 0px;
+      color: $bluish;
+    }
+  }
+
+  &__itemList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  // 4th Section
+  &__joinus {
+    padding: 0 mobile(20px);
+    p {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        mobile(15px),
+        1.67,
+        normal
+      );
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__joinusButtonWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__joinusButton {
+    width: 100%;
+    height: mobile(56px);
+    margin-top: mobile(20px);
+  }
+
+  // 5th Section
+  &__joinusImage {
+    padding: 0 mobile(20px);
+  }
+
+  &__joinusImageDesk {
+    display: none;
+  }
+
+  &__joinusImageMob {
+    display: flex;
+    justify-content: center;
+    padding: mobile(40px) 0 mobile(25px) 0;
+    > img {
+      width: 275px;
+      height: 191px;
+    }
+  }
+
+  &__cardDesktop,
+  &__cardMobile {
+    display: none;
+  }
+
+  &__iconUp {
+    &:before {
+      font-size: mobile(35px);
+    }
+
+    color: $white;
+    font-weight: bold;
+  }
+
+  &__up {
+    position: absolute;
+    right: mobile(20px);
+    bottom: mobile(15px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: mobile(40px);
+    height: mobile(39px);
+    background-color: $bluish;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__imgSecc1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    >img{
+      width: mobile(220px);
+      min-width: mobile(220px);
+    }
+  }
+}

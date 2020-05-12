@@ -1,0 +1,66 @@
+.BaseInput {
+  &__iconShow {
+    font-size: mobile(30px);
+    cursor: pointer;
+    color: $brown-grey;
+  }
+
+  &__root {
+    p {
+      @include text($pastel-red, 'Raleway-Regular', mobile(12px), 1.5, normal);
+      color: $pastel-red !important;
+      font-size: mobile(12px) !important;
+    }
+    > div {
+      margin-top: 16px !important;
+    }
+
+    input {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        mobile(16px),
+        normal,
+        normal
+      );
+      font-size: mobile(16px) !important;
+      padding: 5px 0 !important;
+    }
+
+    label {
+      @include text($brown-grey, 'Raleway', mobile(16px), normal, normal);
+      color: $brown-grey !important;
+      font-size: mobile(16px) !important;
+    }
+  }
+
+  &__verifyCode {
+    p.Mui-error {
+      @include text($pastel-red, 'Raleway', mobile(12px), 1.5, normal);
+    }
+
+    > div:hover:before {
+      border-bottom: 1px solid $bluish !important;
+    }
+
+    > div:hover:after {
+      border-bottom: 1px solid $bluish !important;
+    }
+
+    > div:after,
+    > div:before {
+      border-bottom: 1px solid $grey !important;
+    }
+
+    input {
+      @include text($greyish-brown, 'Raleway', mobile(25px), normal, normal);
+      text-align: center !important;
+    }
+
+    label,
+    label.error {
+      @include text($brown-grey, 'Raleway', mobile(16px), normal, normal);
+      color: $brown-grey !important;
+    }
+  }
+}

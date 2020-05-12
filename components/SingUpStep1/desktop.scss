@@ -1,0 +1,114 @@
+.step1Form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    width: desktop(540px);
+  }
+
+  &__title {
+    @include text($bluish, 'Raleway-Bold', desktop(23px), 1.86, normal);
+    padding-bottom: desktop(10px);
+  }
+
+  &__description {
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      desktop(16px),
+      normal,
+      normal
+    );
+    padding-bottom: desktop(30px);
+  }
+
+  &__row {
+    padding: 0 0 desktop(20px) 0;
+  }
+
+  &__rowTopRecapchat{
+    padding: 0 0 desktop(15px) 0;
+  }
+
+  &__terms {
+    padding-bottom: desktop(30px);
+
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        desktop(12px),
+        normal,
+        normal
+      );
+      font-weight: normal;
+      margin-right: desktop(05px);
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', desktop(12px), normal, normal);
+      text-decoration: none;
+    }
+  }
+
+  &__singIn {
+    padding-top: desktop(15px);
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        desktop(14px),
+        normal,
+        normal
+      );
+      font-weight: 500;
+      padding-right: desktop(05px);
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', desktop(14px), 1.57, normal);
+      text-decoration: none;
+    }
+  }
+
+  &__wrapperRecapchat {
+    padding: 0 0 desktop(15px) 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__validatePassword {
+    display: flex;
+    flex-direction: row;
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      desktop(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+
+    span {
+      padding-top: desktop(8px);
+      margin-right: desktop(10px);
+    }
+  }
+
+  &__stepPasswordValid {
+    @include text(
+      $color-validate-pass,
+      'Raleway-Medium',
+      desktop(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,50 @@
+.notificationAlert {
+  position: absolute;
+  top: desktop(40px);
+  right: desktop(85px);
+  width: fit-content;
+  padding: 14px 0px 14px 18px;
+  box-sizing: border-box;
+  border-left: 10px solid grey;
+  box-shadow: 0 2px 4px 0 rgba(92, 92, 92, 0.3);
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-self: center;
+  justify-items: center;
+  align-items: center;
+
+  &__message {
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      desktop(13px),
+      1.86,
+      normal
+    );
+  }
+
+  &__hidden {
+    visibility: hidden;
+  }
+
+  &__success {
+    border-left: 10px solid $color-validate-pass !important;
+  }
+
+  &__error {
+    border-left: 10px solid $pastel-red !important;
+  }
+
+  &__show {
+    visibility: visible;
+  }
+
+  &__iconClose {
+    cursor: pointer;
+    font-size: desktop(10px);
+    :before {
+      color: $brown-grey;
+    }
+  }
+}

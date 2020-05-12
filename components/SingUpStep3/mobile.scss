@@ -1,0 +1,37 @@
+.Step3 {
+  width: mobile(320px);
+  &__container {
+    padding: 0 mobile(15px) 0 mobile(15px);
+  }
+
+  &__title {
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      mobile(18px),
+      normal,
+      normal
+    );
+    text-align: center;
+    font-weight: 500;
+    padding-top: 0;
+  }
+
+  &__row {
+    padding-top: 0;
+    padding-bottom: mobile(30px);
+  }
+
+  &__rowButton {
+    padding-top: mobile(10px);
+    padding-bottom: mobile(20px);
+  }
+
+  &__helperText {
+    @include text($greyish-brown, 'Raleway-Regular', mobile(12px), 1.5, normal);
+  }
+
+  &__imageCrop {
+    padding: mobile(30px) 0;
+  }
+}

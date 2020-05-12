@@ -1,0 +1,212 @@
+.landing {
+  background: linear-gradient(180deg, rgba(242,242,242,1) 80%, rgba(255,255,255,1) 80%);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    min-height: 100vh;
+    z-index: 2;
+    position: relative;
+    padding-top: desktop(20px);
+  }
+
+  &__parallax {
+    background-image: url('../../public/assets/images/parallax_landing.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  // 1th Section
+  &__register {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: desktop(50px);
+  }
+
+  &__title {
+    @include text($white, 'Raleway-Medium', desktop(35px), 1.14, normal);
+    width: desktop(445px);
+    margin-bottom: desktop(05px);
+    >span{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subTitle {
+    @include text($white, 'Raleway-Regular', desktop(18px), 1.67, normal);
+    width: desktop(445px);
+  }
+
+  &__buttonRegister {
+    margin-top: desktop(50px);
+    width: desktop(255px);
+    height: desktop(46px);
+  }
+
+  // 2th Section
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: span 2;
+    padding-top: desktop(120px);
+    justify-items: flex-end;
+    align-items: flex-start;
+    margin-top: 0; 
+    padding-right: desktop(50px);
+  }
+
+  &__paddingCard {
+    padding-top: desktop(100px);
+  }
+
+  &__marginCard {
+    padding-bottom: desktop(40px);
+  }
+
+  // 3th Section
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: desktop(50px);
+  }
+
+  &__infoTitle {
+    @include text($black-text, 'Raleway-Medium', desktop(35px), 1.86, normal);
+    font-weight: 500;
+  }
+
+  &__infoTitle2 {
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      desktop(35px),
+      1.86,
+      normal
+    );
+    font-weight: 500;
+  }
+
+  &__itemText {
+    position: relative;
+    padding-left: desktop(25px);
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      desktop(18px),
+      1.67,
+      normal
+    );
+    &::before {
+      font-family: 'icomoon';
+      content: '\e925';
+      position: absolute;
+      left: 0px;
+      color: $bluish;
+    }
+  }
+
+  &__itemList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  // 4th Section
+  &__joinus {
+    background-color: $white;
+    padding-left: desktop(50px);
+    padding-bottom: desktop(60px);
+    p {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        desktop(18px),
+        1.67,
+        normal
+      );
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__joinusButtonWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__joinusButton {
+    width: desktop(255px);
+    height: desktop(46px);
+    margin-top: desktop(20px);
+  }
+
+  // 5th Section
+  &__joinusImage {
+    background-color: $white;
+    padding-right: desktop(50px);
+    padding-bottom: desktop(60px);
+  }
+
+  &__joinusImageDesk {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: desktop(500px);
+    }
+  }
+
+  &__joinusImageMob {
+    display: none;
+  }
+
+  &__iconUp {
+    &:before {
+      font-size: desktop(35px);
+    }
+
+    color: $white;
+    font-weight: bold;
+  }
+
+  &__up {
+    position: absolute;
+    right: desktop(20px);
+    bottom: desktop(33px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: desktop(40px);
+    height: desktop(39px);
+    background-color: $bluish;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__fontWeight {
+    font-weight: 600;
+  }
+  &__imgSecc1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: desktop(30px);
+    >img{
+      width: desktop(220px);
+    }
+  }
+}

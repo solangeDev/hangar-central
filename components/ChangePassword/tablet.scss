@@ -1,0 +1,55 @@
+.changePassword {
+  width: tablet(540px);
+  &__title {
+    @include text($black-text, 'Raleway-Bold', tablet(23px), 1.86, normal);
+    color: #1d79be;
+    padding-bottom: tablet(10px);
+  }
+  &__subTitle {
+    @include text($black-text, 'Raleway-Regular', tablet(16px), 1.86, normal);
+    color: #4a4a4a;
+    display: inline-block;
+    margin-bottom: tablet(30px);
+  }
+  &__inputWidth {
+    width: 100%;
+    margin-bottom: tablet(30px);
+  }
+  &__buttonContainer {
+    margin-bottom: tablet(15px);
+  }
+  &__changePass {
+    @include text($black-text, 'Raleway-Medium', tablet(16px), 1.86, normal);
+    color: #4a4a4a;
+    font-size: tablet(14px);
+    a {
+      @include text($black-text, 'Raleway-Medium', tablet(16px), 1.86, normal);
+      color: #1d79be;
+    }
+  }
+  &__validatePassword {
+    display: flex;
+    flex-direction: row;
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      tablet(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+    span {
+      margin-right: tablet(10px);
+    }
+  }
+  &__stepPasswordValid {
+    @include text(
+      $color-validate-pass,
+      'Raleway-Medium',
+      tablet(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+  }
+}

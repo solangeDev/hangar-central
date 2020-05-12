@@ -1,0 +1,42 @@
+.dropdown {
+  width: tablet(65px) !important;
+  height: tablet(30px) !important;
+
+  &>div{
+    border-radius: 5px !important;
+    border: solid 1px #d6d6d6;
+    padding: tablet(05px) !important;
+    background-color: #ffffff !important;
+  }
+
+  &>svg {
+    display: none;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    @include text($greyish-brown, 'Raleway', tablet(12px), 1.75, normal);
+    margin-right: tablet(10px);
+    font-weight: 600;
+  }
+
+  &__wrapperItem {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
+.MenuItemRoot{
+  background: $white !important;
+  color: $bluish !important;
+  font-family: 'Raleway-Regular' !important;
+  font-size: tablet(12px) !important;
+  padding-left: 10px !important;
+  padding-right: 26px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  white-space: inherit !important;
+}
+.MenuItemRoot:first-child{
+  padding-top: 15px !important;
+}

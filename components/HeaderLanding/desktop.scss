@@ -1,0 +1,33 @@
+.headerLanding {
+  width: 100%;
+  background-color: transparent;
+  height: auto;
+  position: absolute;
+  top: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: desktop(20px) desktop(50px) 0 desktop(50px);
+  }
+
+  &__wrapperButton {
+    display: flex;
+  }
+
+  &__buttonSession {
+    height: desktop(36px);
+    margin-left: desktop(15px);
+  }
+
+  &__logo {
+    min-width: desktop(190px);
+    width: desktop(190px);
+  }
+
+  &__buttonRegister {
+    height: desktop(36px);
+    margin-left: desktop(15px);
+  }
+}

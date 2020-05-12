@@ -1,0 +1,58 @@
+.authentication {
+  &__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: mobile(78px) 1fr;
+    grid-gap: 30px 0px;
+  }
+
+  &__backgroundLogin {
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    padding-top: mobile(24px);
+    padding-left: mobile(15px);
+
+    img {
+      filter: invert(36%) sepia(87%) saturate(692%) hue-rotate(170deg)
+        brightness(77%) contrast(93%);
+    }
+  }
+
+  &__authContainer {
+    align-items: baseline;
+  }
+
+  &__header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: mobile(35px) mobile(20px) 0 mobile(20px);
+    align-items: center;
+  }
+
+  &__logoMobile {
+    min-width: 132px;
+    width: mobile(132px);
+    height: mobile(28px);
+    display: block;
+    cursor: pointer;
+  }
+
+  &__logoDesktop {
+    display: none;
+  }
+
+  &__linkBack {
+    cursor: pointer;
+    i {
+      color: $brown-grey;
+      font-size: mobile(15px);
+    }
+  }
+
+  &__hide {
+    display: none;
+  }
+}

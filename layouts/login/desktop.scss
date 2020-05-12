@@ -1,0 +1,57 @@
+.authentication {
+  &__wrapper {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: desktop(435px) 1fr;
+  }
+
+  &__backgroundLogin {
+    background-image: url('../../public/assets/images/background_auth.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: desktop(40px);
+    padding-left: desktop(85px);
+  }
+
+  &__authContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: desktop(85px);
+    padding-right: desktop(85px);
+    padding-top: desktop(40px);
+    align-items: center;
+  }
+
+  &__logoMobile {
+    display: none;
+  }
+
+  &__logoDesktop {
+    min-width: 190px;
+    width: desktop(190px);
+    display: block;
+    cursor: pointer;
+  }
+
+  &__linkBack {
+    cursor: pointer;
+    i {
+      color: $brown-grey;
+      font-size: desktop(15px);
+    }
+  }
+
+  &__hide {
+    display: none;
+  }
+}

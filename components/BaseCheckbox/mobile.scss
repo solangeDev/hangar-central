@@ -1,0 +1,54 @@
+.Checkbox {
+  input {
+    display: none;
+  }
+
+  i {
+    padding: 0 !important;
+  }
+
+  &__root {
+    padding: 0 !important;
+    margin: 0 !important;
+    > span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        mobile(14px),
+        1.57,
+        normal
+      );
+    }
+  }
+
+  &__rootLabel {
+    padding: 0 10px 0 0 !important;
+    margin: 0 !important;
+    > span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        mobile(14px),
+        1.57,
+        normal
+      );
+    }
+  }
+
+  &__iconGrey {
+    color: $brown-grey !important;
+    font-size: mobile(20px);
+    padding-left: 0 !important;
+  }
+
+  &__iconBlue {
+    color: $bluish !important;
+    font-size: mobile(20px);
+    padding-left: 0 !important;
+  }
+
+  &__checkedIcon {
+    font-size: mobile(20px);
+    padding-left: 0 !important;
+  }
+}

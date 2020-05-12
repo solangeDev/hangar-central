@@ -1,0 +1,64 @@
+.Login {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    width: tablet(545px);
+  }
+
+  &__title {
+    @include text($bluish, 'Raleway-Bold', tablet(23px), 1.3, normal);
+    padding-bottom: tablet(10px);
+    font-weight: bold;
+  }
+
+  &__description {
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      tablet(16px),
+      normal,
+      normal
+    );
+    font-weight: normal;
+    padding-bottom: tablet(20px);
+  }
+
+  &__row {
+    padding: 0 0 tablet(20px) 0;
+  }
+
+  &__rowBottom {
+    padding: 0 0 tablet(37px) 0;
+  }
+
+  &__rowRememberme {
+    padding: 0 0 tablet(29px) 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include text($bluish, 'Raleway-Medium', tablet(14px), 1.57, normal);
+  }
+
+  &__linkRegister {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: tablet(40px);
+    align-self: center;
+    align-items: center;
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        tablet(14px),
+        1.57,
+        normal
+      );
+    }
+    a {
+      padding-left: tablet(5px);
+    }
+  }
+}

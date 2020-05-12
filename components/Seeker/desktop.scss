@@ -1,0 +1,51 @@
+.Seeker {
+  > div {
+    padding-right: 0 !important;
+  }
+  width: 100% !important;
+
+  fieldset {
+    border-color: transparent !important;
+  }
+
+  span {
+    :before {
+      color: $brown-grey;
+      font-size: desktop(28px);
+    }
+  }
+
+  &__border {
+    width: desktop(250px);
+    height: 1px;
+    border: solid 1px #ebebeb;
+  }
+
+  button {
+    padding: desktop(16px) desktop(30px) desktop(16px) 0 !important;
+  }
+
+  &__button {
+    &:hover {
+      background: transparent !important;
+      background-color: transparent !important;
+    }
+  }
+
+  input:placeholder-shown {
+    @include text($greyish-brown, 'Raleway-Bold', desktop(15px), 1.2, normal);
+    font-weight: bold !important;
+    padding: desktop(30px) 0 desktop(20px) desktop(20px);
+  }
+
+  input {
+    @include text($greyish-brown, 'Raleway-Medium', desktop(15px), 1.2, normal);
+  }
+
+  &__root {
+    color: red !important;
+    > div {
+      padding: 0 !important;
+    }
+  }
+}

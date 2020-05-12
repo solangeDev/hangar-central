@@ -1,0 +1,12 @@
+.banner {
+  display: grid;
+  justify-items: center;
+  height: tablet(200px);
+  width: tablet(255px);
+
+  &__image {
+    height: tablet(200px);
+    width: tablet(255px);
+    box-sizing: border-box;
+  }
+}

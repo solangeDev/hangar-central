@@ -1,0 +1,46 @@
+.MuiInputRoot {
+    color: $bluish !important;
+    background: none !important;
+    border: none !important;
+    font-size: tablet(12px) !important;
+    font-family: 'Raleway-Regular' !important;
+    @include text($bluish, 'Raleway-Regular', tablet(12px), 1.5, normal);
+    padding-right: tablet(10px);
+    padding-left: tablet(10px);
+    text-decoration: none;
+    >div{
+      color: $bluish !important;
+      font-family: 'Raleway-Regular' !important;
+      @include text($bluish, 'Raleway-Regular', tablet(12px), 1.5, normal);
+    }
+    :focus{
+        background: none !important;
+    }
+    svg{
+      right: 10px;
+      fill: $bluish;
+    }
+    &::before {
+      content: '';
+      border: none !important;
+    }
+    &::after {
+      border: none !important;
+    }
+    &:active {
+      border: none !important;
+    }
+    &:hover {
+      border: none !important;
+      &::before {
+        border: none !important;
+      }
+    }
+    &:focus {
+      background: none !important;
+    }
+  }
+  .MuiInput-underline:before {
+    border: none !important;
+  }
+  

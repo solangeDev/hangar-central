@@ -1,0 +1,107 @@
+.step1Form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    width: tablet(545px);
+  }
+
+  &__title {
+    @include text($bluish, 'Raleway-Bold', 23px, 1.86, normal);
+    padding-bottom: tablet(10px);
+  }
+
+  &__description {
+    @include text(
+      $greyish-brown,
+      'Raleway-Regular',
+      16px,
+      normal,
+      normal
+    );
+    padding-bottom: tablet(30px);
+  }
+
+  &__row {
+    padding: 0 0 tablet(20px) 0;
+  }
+
+  &__rowTopRecapchat{
+    padding: 0 0 tablet(15px) 0;
+  }
+
+  &__terms {
+    padding-bottom: tablet(30px);
+
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Regular',
+        tablet(12px),
+        normal,
+        normal
+      );
+      font-weight: normal;
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', tablet(12px), normal, normal);
+      text-decoration: none;
+    }
+  }
+
+  &__singIn {
+    padding-top: tablet(15px);
+
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        tablet(14px),
+        normal,
+        normal
+      );
+      font-weight: 500;
+      padding-right: tablet(05px);
+    }
+
+    a {
+      @include text($bluish, 'Raleway-Medium', tablet(14px), 1.57, normal);
+      text-decoration: none;
+    }
+  }
+
+  &__wrapperRecapchat {
+    padding: 0 0 tablet(15px) 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__validatePassword {
+    display: flex;
+    flex-direction: row;
+    @include text($greyish-brown, 'Raleway', tablet(12px), normal, normal);
+    font-weight: 500;
+
+    span {
+      margin-right: tablet(10px);
+    }
+  }
+
+  &__stepPasswordValid {
+    @include text(
+      $color-validate-pass,
+      'Raleway-Medium',
+      tablet(12px),
+      normal,
+      normal
+    );
+    font-weight: 500;
+  }
+}

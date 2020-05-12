@@ -1,0 +1,162 @@
+.baseButton {
+  width: 100%;
+  height: desktop(46px);
+
+  &:disabled {
+    background-color: $dark-sky-blue !important;
+  }
+
+  &__btnBlue {
+    border-radius: 5px !important;
+    color: $white !important;
+    background: $blue !important;
+    border-color: transparent;
+    font-weight: bold !important;
+    text-transform: none !important;
+    span {
+      @include text($white, 'Raleway-Bold', desktop(15px), normal, normal);
+      box-sizing: border-box;
+    }
+  }
+
+  &__btnBlueSmall {
+    border-radius: 5px !important;
+    height: desktop(32px) !important;
+    color: $white !important;
+    background: $blue !important;
+    border-color: transparent;
+    font-weight: bold !important;
+    text-transform: none !important;
+    span {
+      @include text($white, 'Raleway-Bold', desktop(12px), normal, normal);
+      box-sizing: border-box;
+    }
+  }
+
+  &__btnTransparent {
+    color: $white !important;
+    background: transparent !important;
+    border-color: transparent;
+    border-radius: 5px;
+    font-weight: bold !important;
+    text-transform: none !important;
+    height: desktop(36px);
+    span {
+      @include text($white, 'Raleway-Bold', desktop(13px), normal, normal);
+      box-sizing: border-box;
+      position: inherit !important;
+    }
+    span:hover {
+      color: $brown-grey !important;
+    }
+  }
+
+  &__btnTransparentBlack {
+    color: $black-text !important;
+    border-color: transparent;
+    border-radius: 5px;
+    @include text($white, 'Raleway', desktop(15px), normal, normal);
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+    height: desktop(36px);
+
+    span {
+      color: $black-text !important;
+    }
+
+    span:hover {
+      color: $white !important;
+    }
+  }
+
+  &__btnBorderTransparent {
+    height: desktop(36px);
+    color: $white !important;
+    background: transparent !important;
+    border-radius: 5px;
+    border: 2px solid $white !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+    span {
+      @include text($white, 'Raleway-Bold', desktop(13px), normal, normal);
+      box-sizing: border-box;
+    }
+  }
+  &__BtnCancel {
+    padding: 0 !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin-top: 15px !important;
+    &:hover {
+      background: none !important;
+    }
+    span {
+      text-transform: initial !important;
+      color: $greyish-brown !important;
+      @include text($white, 'Raleway-Medium', desktop(14px), normal, normal);
+      box-sizing: border-box;
+    }
+  }
+  &__BtnCrop {
+    padding: 0 !important;
+    display: inline-block !important;
+    height: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+    &:hover {
+      background: none !important;
+    }
+    span {
+      text-transform: initial;
+      color: $greyish-brown !important;
+      @include text($white, 'Raleway-Regular', desktop(14px), normal, normal);
+      box-sizing: border-box;
+    }
+  }
+}
+
+/* Radial Out */
+.hvr-radial-out {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $dark-sky-blue;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+  color: white;
+  border: transparent !important;
+}
+
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}

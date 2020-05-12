@@ -1,0 +1,13 @@
+.banner {
+  display: grid;
+  justify-items: center;
+  height: desktop(200px);
+  width: desktop(255px);
+
+  &__image {
+    border-radius: 10px;
+    height: desktop(200px);
+    width: desktop(255px);
+    box-sizing: border-box;
+  }
+}

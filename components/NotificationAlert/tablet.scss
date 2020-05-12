@@ -1,0 +1,32 @@
+.notificationAlert {
+  top: tablet(30px);
+  right: tablet(112px);
+
+  &__message {
+    @include text($greyish-brown, 'Raleway-Medium', tablet(13px), 1.86, normal);
+  }
+
+  &__hidden {
+    visibility: hidden;
+  }
+
+  &__success {
+    border-left: 10px solid $color-validate-pass !important;
+  }
+
+  &__error {
+    border-left: 10px solid $pastel-red !important;
+  }
+
+  &__show {
+    visibility: visible;
+  }
+
+  &__iconClose {
+    cursor: pointer;
+    :before {
+      color: $brown-grey;
+    }
+    font-size: tablet(10px);
+  }
+}

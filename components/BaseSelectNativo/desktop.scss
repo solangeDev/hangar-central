@@ -1,0 +1,69 @@
+.select {
+  width: 100%;
+
+  svg {
+    fill: $brown-grey;
+  }
+
+  div{
+    background-color: transparent !important;
+  }
+
+  span {
+    @include text(
+      $greyish-brown,
+      'Raleway-Medium',
+      desktop(16px),
+      normal,
+      normal
+    );
+  }
+
+  &__selectRoot {
+    padding: 5px 0 !important;
+  }
+
+  > div:after,
+  > div:before {
+    border-bottom: 1px solid $grey !important;
+  }
+
+  > div:hover:before {
+    border-bottom: 1px solid $dark-sky-blue !important;
+  }
+
+  > div:hover:after {
+    border-bottom: 1px solid $dark-sky-blue !important;
+  }
+
+  label {
+    @include text($brown-grey, 'Raleway', desktop(16px), normal, normal);
+    color: $brown-grey !important;
+  }
+
+  p {
+    @include text($pastel-red, 'Raleway-Regular', desktop(12px), 1.5, normal);
+  }
+
+  &__menuContainer {
+    background-color: $white !important;
+    padding: desktop(5px) desktop(15px) !important;
+    span {
+      @include text(
+        $greyish-brown,
+        'Raleway-Medium',
+        desktop(16px),
+        normal,
+        normal
+      );
+    }
+
+    &:hover {
+      background-color: $brown-grey !important;
+    }
+
+    &:active {
+      background-color: $brown-grey !important;
+    }
+  }
+}

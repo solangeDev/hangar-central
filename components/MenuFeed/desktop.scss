@@ -1,0 +1,42 @@
+.FeedMenu {
+  &__container {
+    width: desktop(255px);
+    height: desktop(240px);
+    border-radius: 3px;
+    box-shadow: 0 -2px 5px 0 rgba(38, 38, 38, 0.2);
+    border: solid 1px #c5c5c5;
+    background-color: #ffffff;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: desktop(60px);
+    cursor: pointer;
+  }
+
+  &__borderMenu {
+    width: desktop(5px);
+    height: desktop(60px);
+    background-color: #0a2a43;
+    display: none;
+  }
+
+  &__linkMenu {
+    a {
+      text-decoration: none;
+      @include text($brown-grey, 'Raleway-Bold', desktop(15px), 1.2, normal);
+      &:hover {
+        color: #0a2a43;
+      }
+    }
+  }
+
+  &__iconMenu {
+    color: $brown-grey;
+    font-size: desktop(28px);
+    padding: 0 desktop(15px) 0 desktop(30px);
+  }
+}

@@ -1,0 +1,12 @@
+.banner {
+  display: grid;
+  justify-items: center;
+  box-sizing: border-box;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+}

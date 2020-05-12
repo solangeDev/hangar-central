@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon_gmail@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Login-&amp;-Registro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D--Register-3.6" transform="translate(-741.000000, -496.000000)" fill="#D0021B" fill-rule="nonzero">
+            <g id="icon_gmail" transform="translate(741.000000, 496.000000)">
+                <path d="M23.5625,0 L22.75,0 L3.25,0 L2.4375,0 C1.092,0 0,1.12 0,2.5 L0,3.33333333 L0,16.6666667 L0,17.5 C0,18.88 1.092,20 2.4375,20 L3.25,20 L22.75,20 L23.5625,20 C24.908,20 26,18.88 26,17.5 L26,16.6666667 L26,3.33333333 L26,2.5 C26,1.12 24.908,0 23.5625,0 Z M20.69275,3.33333333 L13,8.33333333 L5.30725,3.33333333 L20.69275,3.33333333 Z M22.75,17.3333333 L3.25,17.3333333 L3.25,5.3347696 L13,11.9631358 L22.75,5.33333333 L22.75,17.3333333 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
